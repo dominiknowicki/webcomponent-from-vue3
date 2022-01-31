@@ -10,14 +10,13 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Builds a library that can be imported in other projects
 ```
-yarn build
+vue-cli-service build --target lib --inline-vue --name myLib [application or component entry-point]
 ```
-
-### Lints and fixes files
+eg
 ```
-yarn lint
+vue-cli-service build --target lib --inline-vue --name lib-counter ./src/components/myCounter.js
 ```
 
 ### Customize configuration
